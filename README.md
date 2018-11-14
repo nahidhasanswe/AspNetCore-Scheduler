@@ -13,7 +13,7 @@ After installing the package from nuget in your asp.net core app, you need to im
 
 The implemented class looks like below:
 
-```
+```csharp
 public class ScheduleTask : IScheduledTask
 {
     public string Schedule => "*/1 * * * *";
@@ -32,7 +32,7 @@ Now you will implement your own business logic schedule task into **_ExecuteAsyn
 
 And finally add scheduler services into startup.cs class
 
-```
+```csharp
 services.AddSingleton<IScheduledTask, ScheduleTask>();
 services.AddScheduler();
 ```
