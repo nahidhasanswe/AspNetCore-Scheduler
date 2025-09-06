@@ -14,7 +14,7 @@ After installing the package from nuget in your asp.net core app, you need to im
 The implemented class looks like below:
 
 ```csharp
-public class ScheduleTask : IScheduledTask
+public class TestScheduler : IScheduledTask
 {
     public async Task ExecuteAsync(CancellationToken cancellationToken)
     {
