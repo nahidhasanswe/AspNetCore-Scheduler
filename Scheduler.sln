@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Worker", "AspNetCore.Worker\AspNetCore.Worker.csproj", "{59CA2502-05A0-44CE-A954-9F4A46887F84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Scheduler", "AspNetCore.Scheduler\AspNetCore.Scheduler.csproj", "{43C18516-A50C-475D-868A-230688797FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Worker", "AspNetCore.Worker\AspNetCore.Worker.csproj", "{EB37CCF4-1FB3-4E00-850E-52B4B3C44F83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{59CA2502-05A0-44CE-A954-9F4A46887F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59CA2502-05A0-44CE-A954-9F4A46887F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59CA2502-05A0-44CE-A954-9F4A46887F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59CA2502-05A0-44CE-A954-9F4A46887F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C18516-A50C-475D-868A-230688797FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C18516-A50C-475D-868A-230688797FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C18516-A50C-475D-868A-230688797FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C18516-A50C-475D-868A-230688797FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB37CCF4-1FB3-4E00-850E-52B4B3C44F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB37CCF4-1FB3-4E00-850E-52B4B3C44F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB37CCF4-1FB3-4E00-850E-52B4B3C44F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB37CCF4-1FB3-4E00-850E-52B4B3C44F83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

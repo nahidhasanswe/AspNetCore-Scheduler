@@ -1,21 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using System;
+using AspNetCore.Worker;
+using AspNetCore.Scheduler;
 
-namespace AspNetCore.Worker
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var hostBuilder = new HostBuilder().ConfigureServices(service =>
-            {
-                Startup startup = new Startup();
-                startup.ConfigureServices(service);
-                IServiceProvider serviceProvider = service.BuildServiceProvider();
-            });
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddScheduler<TestScheduler>("*/1 * * * *"); // Runs every minute
 
-            hostBuilder.RunConsoleAsync().GetAwaiter().GetResult();
-        }
-    }
-}
+var host = builder.Build();
+await host.RunAsync();

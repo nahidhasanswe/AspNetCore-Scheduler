@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>AspNetCore.Scheduler</PackageId>
+    <Version>2.0.0</Version>
+    <Authors>Md Nahid Hasan</Authors>
+    <PackageDescription>A lightweight scheduler library for ASP.NET Core.</PackageDescription>
+    <PackageTags>aspnetcore;library;scheduler;cron</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild> <!-- optional: build generates nuget package -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn> <!-- optional: suppress missing XML comment warnings -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cronos" Version="0.11.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.8" />
+  </ItemGroup>
+
+</Project>

@@ -16,8 +16,6 @@ The implemented class looks like below:
 ```csharp
 public class ScheduleTask : IScheduledTask
 {
-    public string Schedule => "*/1 * * * *";
-
     public async Task ExecuteAsync(CancellationToken cancellationToken)
     {
         Console.WriteLine("Write After 1 min");
@@ -33,8 +31,7 @@ Now you will implement your own business logic schedule task into **_ExecuteAsyn
 And finally add scheduler services into startup.cs class
 
 ```csharp
-services.AddSingleton<IScheduledTask, ScheduleTask>();
-services.AddScheduler();
+services.AddScheduler<TestScheduler>("*/1 * * * *");
 ```
 
 Now run your app and this scheduler is working
